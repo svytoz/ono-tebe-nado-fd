@@ -13,7 +13,7 @@
   font-weight: 400;
   font-style: Regular;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 22px;
   letter-spacing: 0%;
 }
 
@@ -28,17 +28,17 @@
 .header__logo {
   width: 148px;
   height: 105px;
+}
+
+.header__logo-image img {
+  width: 129px;
+  height: 104px;
+  object-fit: contain;
+  display: block;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-self: center;
-}
-
-.header__logo-image img {
-  height: 95%;
-
-  object-fit: contain;
-  display: block;
 }
 
 .header__address {
@@ -54,3 +54,107 @@
   letter-spacing: 0%;
 }
 
+.cover {
+  position: relative;
+  min-height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  z-index: -1; /* не работает*/
+  margin-bottom: 180px;
+}
+
+.overlay {
+  background-color: black;
+  opacity: 60%;
+  position: absolute;
+  z-index: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+.cover__title {
+  width: 90%;
+  display: flex;
+  position: relative;
+  justify-self: center;
+  inset: 165px 0 207px;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.aligned-text {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 100px;
+  line-height: 1.5em;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #ffffff;
+  }
+
+span {
+  display: block;
+}
+
+.aligned-text_left {
+  justify-self: start;
+}
+
+.aligned-text_center {
+  justify-self: center;
+}
+
+.aligned-text_right {
+  justify-self: end;  /* в конце лишний отступ*/
+}
+
+.aligned-text_right::after {
+  content: none;
+}
+
+
+
+.cover__description {
+  display: flex;
+  position: absolute;
+  inset: 656px 50px 50px;
+  z-index: 1; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover__description-text {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0%; /* letter spacing отступы*/
+  text-transform: uppercase;
+}
+
+.bet-button {
+  width: 256px;
+  height: 51px;
+  opacity: 1;
+  border: 1px solid #fff;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.lots {
+
+}
+
+.footer {
+  display: grid;
+}
