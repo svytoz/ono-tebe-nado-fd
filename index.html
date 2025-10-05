@@ -12,8 +12,10 @@
 </head>
 
 <body>
-  <header class="header"> <!-- отступы между -->
-    <nav class="header__menu"> <!-- отступы между -->
+  <header class="header">
+    <!-- отступы между -->
+    <nav class="header__menu">
+      <!-- отступы между -->
       <ul class="header__links-list">
         <li class="header__links-list-item_no-bullit">
           <a href="#" class="header__link_active">главная</a>
@@ -26,7 +28,8 @@
         </li>
       </ul>
     </nav>
-    <div class="header__logo"> <!--размеры лого-->
+    <div class="header__logo">
+      <!--размеры лого-->
       <a class="header__logo-image"><img src="./images/logo-black.svg" alt="Логотип 'Оно тебе надо' " /></a>
     </div>
     <address class="address header__address">
@@ -53,27 +56,55 @@
       </div>
     </section>
     <section class="lots">
-      <h2 class="section__title">Лоты</h2>
+      <h2 class="lots__title">Лоты</h2>
       <ul class="lots__cards-list">
         <!-- overlay? -->
-        <li class="lots__cards-list__item">
-          <a href="#">
-            <article>
-              <p class=""></p>
+        <li class="lots__cards-list__item__cinema">
+          <a class="card-link" href="#">
+            <article class="card">
+              <div class="overlay"></div>
+              <h3 class="card__title">
+                Фильм режиссёра, который бросил киношколу
+              </h3>
+              <p class="card__description">
+                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                ставка, если бы вы не знали, что режиссёр — Пол Томас
+                Андерсон?
+              </p>
             </article>
           </a>
         </li>
-        <li class="lots__cards-list__item">
-          <a href="#">
-            <article>
-              <p class=""></p>
+        <li class="lots__cards-list__item__book">
+          <a class="card-link" href="#">
+            <article class="card">
+              <div class="overlay"></div>
+              <h3 class="card__title">
+                Книга, где описан один скучный день из жизни рекламного агента
+              </h3>
+              <p class="card__description">
+                Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                с переходами на древнеанглийский. В ней одновременно
+                рассказывается о 16 июня 1904 года и об истории литературы,
+                начиная с античных времён. И это всё накладывается на
+                эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                Джеймса Джойса?
+              </p>
             </article>
           </a>
         </li>
-        <li class="lots__cards-list__item">
-          <a href="#">
-            <article>
-              <p class=""></p>
+        <li class="lots__cards-list__item__art">
+          <a class="card-link" href="#">
+            <article class="card">
+              <div class="overlay"></div>
+              <h3 class="card__title">
+                Картина, которую повторит даже 5-летний сын маминой подруги
+              </h3>
+              <p class="card__description">
+                Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                котиков... Сколько бы вы на такое поставили, если бы не знали,
+                что это — одна из революционных работ Кандинского?
+              </p>
             </article>
           </a>
         </li>
@@ -81,13 +112,33 @@
       <a class="lots__link" href="#">посмотреть больше</a>
     </section>
     <section class="about">
-      <div class="logo-circle"></div>
-      <div class="about__description">
-        <h2 class="section__title">Об аукционе</h2>
+      <div class="about__column__logo">
+        <div class="about__logo">
+          <a class="about__logo-image"><img src="./images/logo-white.svg" alt="Логотип 'Оно тебе надо' " /></a>
+        </div>
       </div>
-      <div class="about__description__text">
-        <p></p>
-        <p></p>
+      <div class="about__column__description">
+        <div class="about__description">
+          <h2 class="about__title">Об аукционе</h2>
+        </div>
+        <div class="about__text">
+          <p>
+            Здесь вы не встретите очередное пафосное собрание невероятно
+            дорогого антиквариата. Наши лоты вообще не должны были попасть ни
+            на один аукцион. Потому что кому нужен дневник девочки-подростка
+            или картина, которую может нарисовать даже ребёнок? Кому нужны все
+            эти странные вещи, созданные любителями?
+          </p>
+          <p>
+            Слишком сложные или, наоборот, слишком простые. Опережающие своё
+            время. В пух и прах растерзанные критиками. Непринятые и
+            непонятые. Когда-то они казались просто неудачными. Но, несмотря
+            на критику, кажущуюся простоту или сложность, сейчас без этих
+            лотов невозможно представить современную культуру. Когда в эти
+            вещи не верил никто, продолжали верить их создатели. И сейчас эти
+            лоты стали культовыми.
+          </p>
+        </div>
       </div>
     </section>
   </main>
@@ -98,22 +149,32 @@
       <p>наб. Принсенграхт 263- 265, Амстердам</p>
     </address>
     <nav class="footer__menu">
-      <ul class="footer__links-list">
-        <li class="footer_links-list-item">
-          <a href="#" class="header__link_active">главная</a>
+      <ul class="footer__menu-list">
+        <li class="footer__menu-list-item">
+          <a href="#" class="footer__menu-link_active">главная</a>
         </li>
-        <li class="footer_links-list-item">
-          <a href="" class="header__link">посмотреть лоты</a>
+        <li class="footer__menu-list-item">
+          <a href="" class="footer__menu-link">посмотреть лоты</a>
         </li>
-        <li class="footer_links-list-item">
-          <a href="" class="header__link">об аукционе</a>
+        <li class="footer__menu-list-item">
+          <a href="" class="footer__menu-link">об аукционе</a>
         </li>
       </ul>
     </nav>
-    <ul class="socials">
-      <li><a href="">YT</a></li>
-      <li><a href="">VK</a></li>
-      <li><a href="">P</a></li>
+    <ul class="footer__social-list">
+      <li class="footer__social-list-item">
+        <a class="footer__social-link" href="https://youtube.com/"><img class="footer__social-icon"
+            src="./images/yt.svg" alt="Youtube" />
+        </a>
+      </li>
+      <li class="footer__social-list-item">
+        <a class="footer__social-link" href="https://vk.com/"><img class="footer__social-icon" src="./images/vk.svg"
+            alt="VK"></a>
+      </li>
+      <li class="footer__social-list-item">
+        <a class="footer__social-link" href="https://pinterest.com/"><img class="footer__social-icon"
+            src="./images/pinterest.svg" alt="Pinterest"></a>
+      </li>
     </ul>
   </footer>
 </body>
