@@ -11,11 +11,9 @@
   gap: 32px;
   list-style: circle;
   font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0%;
-  
 }
 
 .header__links-list-item_no-bullit {
@@ -38,9 +36,7 @@
 }
 
 .header__logo-image img {
-  width: 129px;
-  height: 104px;
-  object-fit: contain;
+  width: 92%;
   display: block;
   display: flex;
   align-items: center;
@@ -51,26 +47,25 @@
 .address {
   display: flex;
   flex-direction: column;
-  max-width: 240px;
+
   align-items: flex-start;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
   line-height: 24.3px;
   letter-spacing: 0%;
-  
 }
 
-.address__number, .address__email {
-  
+.address__number,
+.address__email {
   text-decoration: underline;
   text-underline-offset: 0.22em;
   text-decoration-thickness: 0.05em;
-
 }
 
 .header__address {
   justify-self: end;
+  max-width: 240px;
 }
 
 .cover {
@@ -78,8 +73,10 @@
   min-height: 757px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -136px;
   z-index: -1; /* не работает*/
-  margin-bottom: 180px;
+  margin-bottom: 184px;
 }
 
 .overlay {
@@ -92,8 +89,9 @@
 }
 
 .cover__title {
-  width: 90%;
+  width: 1000px;
   display: flex;
+  gap: 20px;
   position: relative;
   justify-self: center;
   inset: 165px 0 207px;
@@ -103,35 +101,30 @@
 }
 
 .aligned-text {
-  display: block;
   width: 100%;
   font-weight: 700;
   font-style: Bold;
   font-size: 100px;
-  line-height: 1.5em;
+  line-height: 1.2em;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-span {
-  display: block;
-}
-
 .aligned-text_left {
+  display: block;
   justify-self: start;
 }
 
 .aligned-text_center {
+  /*line-height: 1.5em;*/
+  display: block;
   justify-self: center;
 }
 
 .aligned-text_right {
+  display: block;
   justify-self: end; /* в конце лишний отступ*/
-}
-
-.aligned-text_right::after {
-  content: none;
 }
 
 .cover__description {
@@ -182,7 +175,7 @@ span {
   letter-spacing: 0%;
   text-transform: uppercase;
   padding-left: 40px;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
   color: #000;
 }
 
@@ -191,8 +184,7 @@ span {
   gap: 25px;
   list-style: none;
   padding: 0;
-  margin: 0;
-  
+  margin: 0 0 33px;
 }
 
 .card-link {
@@ -205,8 +197,7 @@ span {
   position: relative;
   display: flex;
   flex-direction: column;
-     
-  }
+}
 
 .card__title {
   font-weight: 700;
@@ -220,7 +211,6 @@ span {
   text-decoration-thickness: 0.05em;
   color: #fff;
   margin: 48px 40px 0;
-  
 }
 
 .card__description {
@@ -231,7 +221,7 @@ span {
   color: #fff;
   margin: auto 40px 48px;
   text-decoration: none;
-  }
+}
 
 .lots__cards-list__item__cinema {
   width: 334px;
@@ -240,7 +230,6 @@ span {
   background-position: center;
   background-size: cover;
   z-index: 0;
-   
 }
 
 .lots__cards-list__item__book {
@@ -259,10 +248,18 @@ span {
   background-position: center;
   background-size: cover;
   z-index: 0;
-  
 }
 
-
+.lots__link {
+  margin-left: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: 0.05em;
+}
 
 .about {
   width: 1052px;
@@ -273,8 +270,8 @@ span {
   grid-template-columns: 334px 2fr;
 }
 
-.about__column__logo {
-}
+/*.about__column__logo {
+}*/
 
 .about__column__description {
   display: grid;
@@ -295,11 +292,10 @@ span {
   width: 142px;
 }
 
-.about__description {
-}
+/*.about__description {
+}*/
 
 .about__title {
-  font-family: Raleway;
   font-weight: 700;
   font-style: Bold;
   font-size: 40px;
@@ -326,8 +322,9 @@ span {
   padding: 0 50px;
 }
 
-.footer__adress {
+.footer__address {
   justify-self: start;
+  max-width: 265px;
 }
 
 .footer__menu {
@@ -337,6 +334,12 @@ span {
   line-height: 120%;
   letter-spacing: 0%;
   text-align: center;
+}
+
+.footer__menu-list-item {
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: 0.05em;
 }
 
 .footer__menu-list {
@@ -350,7 +353,7 @@ span {
   display: flex;
   list-style: none;
   gap: 48px;
-  justify-content: center;
+  justify-content: end;
 }
 
 .footer__social-icon {
