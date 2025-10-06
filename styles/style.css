@@ -192,6 +192,12 @@ span {
   list-style: none;
   padding: 0;
   margin: 0;
+  
+}
+
+.card-link {
+  height: 100%;
+  text-decoration: none;
 }
 
 .card {
@@ -210,8 +216,8 @@ span {
   letter-spacing: 0%;
   text-transform: uppercase;
   text-decoration: underline;
-  text-decoration-style: solid;
-  text-decoration-thickness: 0%;
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 0.05em;
   color: #fff;
   margin: 48px 40px 0;
   
@@ -223,10 +229,9 @@ span {
   line-height: 120%;
   letter-spacing: 0%;
   color: #fff;
-  text-decoration: none; /*не работает*/
-  text-decoration-color: #fff;
   margin: auto 40px 48px;
-}
+  text-decoration: none;
+  }
 
 .lots__cards-list__item__cinema {
   width: 334px;
@@ -235,7 +240,7 @@ span {
   background-position: center;
   background-size: cover;
   z-index: 0;
-  text-decoration: none; /*не работает*/
+   
 }
 
 .lots__cards-list__item__book {
@@ -254,10 +259,7 @@ span {
   background-position: center;
   background-size: cover;
   z-index: 0;
-}
-
-.card-link {
-  height: 100%;
+  
 }
 
 
