@@ -88,10 +88,9 @@
   width: 100%;
 }
 
-.cover__title {
-  width: 1000px;
+.cover__heading {
+  width: 1100px;
   display: flex;
-  gap: 20px;
   position: relative;
   justify-self: center;
   inset: 165px 0 207px;
@@ -100,7 +99,7 @@
   padding: 0;
 }
 
-.aligned-text {
+.cover__title {
   width: 100%;
   font-weight: 700;
   font-style: Bold;
@@ -111,20 +110,26 @@
   color: #ffffff;
 }
 
-.aligned-text_left {
+.aligned-text {
   display: block;
-  justify-self: start;
 }
 
+.aligned-text_left {
+  text-align: left;
+  padding-left: 50px;
+    }
+
 .aligned-text_center {
-  /*line-height: 1.5em;*/
-  display: block;
-  justify-self: center;
+  text-align: center;
+  padding-top: 13px;
+  padding-left: 31px;
 }
 
 .aligned-text_right {
-  display: block;
-  justify-self: end; /* в конце лишний отступ*/
+  text-align: right; 
+  padding-top: 15px;
+  padding-right: 20px;
+   
 }
 
 .cover__description {
@@ -143,6 +148,11 @@
   line-height: 28px;
   letter-spacing: 0%; /* letter spacing отступы*/
   text-transform: uppercase;
+  word-spacing: 0.9em;
+}
+
+.word-spacing-text {
+  word-spacing: 0.8em;
 }
 
 .bet-button {
@@ -264,18 +274,20 @@
 .about {
   width: 1052px;
   min-height: 595px;
-  margin: 0 auto 180px;
+  margin: 0 auto 177px;
   display: grid;
   grid-auto-flow: row;
   grid-template-columns: 334px 2fr;
 }
 
-/*.about__column__logo {
-}*/
+.about__column__logo {
+  padding-left: 47px;
+  padding-top: 31px;
+}
 
 .about__column__description {
-  display: grid;
-  align-items: end;
+  padding-left: 25px;
+  padding-top: 136px;
 }
 
 .about__logo {
@@ -308,11 +320,20 @@
 .about__text {
   display: grid;
   gap: 24px;
+  padding-top: 3px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  letter-spacing: 0.03em;
+  
 }
+
+.about__text__word-spacing-max {
+letter-spacing: 0.002em;
+}
+
+.about__text__word-spacing-min {
+  letter-spacing: 0.001em;
+  }
 
 .footer {
   display: grid;
