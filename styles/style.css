@@ -38,7 +38,6 @@
 .header__logo-image img {
   width: 92%;
   display: block;
-  display: flex;
   align-items: center;
   justify-content: center;
   justify-self: center;
@@ -117,7 +116,7 @@
 .aligned-text_left {
   text-align: left;
   padding-left: 50px;
-    }
+}
 
 .aligned-text_center {
   text-align: center;
@@ -126,10 +125,9 @@
 }
 
 .aligned-text_right {
-  text-align: right; 
+  text-align: right;
   padding-top: 15px;
   padding-right: 20px;
-   
 }
 
 .cover__description {
@@ -146,7 +144,7 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
-  letter-spacing: 0%; /* letter spacing отступы*/
+  letter-spacing: 0%;
   text-transform: uppercase;
   word-spacing: 0.9em;
 }
@@ -304,9 +302,6 @@
   width: 142px;
 }
 
-/*.about__description {
-}*/
-
 .about__title {
   font-weight: 700;
   font-style: Bold;
@@ -324,16 +319,15 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  
 }
 
 .about__text__word-spacing-max {
-letter-spacing: 0.002em;
+  letter-spacing: 0.002em;
 }
 
 .about__text__word-spacing-min {
   letter-spacing: 0.001em;
-  }
+}
 
 .footer {
   display: grid;
@@ -354,7 +348,6 @@ letter-spacing: 0.002em;
   font-size: 18px;
   line-height: 120%;
   letter-spacing: 0%;
-  text-align: center;
 }
 
 .footer__menu-list-item {
