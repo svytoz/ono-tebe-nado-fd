@@ -13,7 +13,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  letter-spacing: 0%;
 }
 
 .header__links-list-item_no-bullit {
@@ -46,17 +45,14 @@
 .address {
   display: flex;
   flex-direction: column;
-
   align-items: flex-start;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  line-height: 24.3px;
-  letter-spacing: 0%;
+  line-height: 24.3px;  
 }
 
-.address__number,
-.address__email {
+.address__link {
   text-decoration: underline;
   text-underline-offset: 0.22em;
   text-decoration-thickness: 0.05em;
@@ -76,12 +72,15 @@
   background-position: -136px;
   z-index: -1; /* не работает*/
   margin-bottom: 184px;
+  padding: 165px 50px 0;
 }
 
 .overlay {
   background-color: black;
   opacity: 60%;
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
   min-height: 100%;
   width: 100%;
@@ -92,7 +91,6 @@
   display: flex;
   position: relative;
   justify-self: center;
-  inset: 165px 0 207px;
   z-index: 1;
   margin: 0;
   padding: 0;
@@ -101,7 +99,6 @@
 .cover__title {
   width: 100%;
   font-weight: 700;
-  font-style: Bold;
   font-size: 100px;
   line-height: 1.2em;
   letter-spacing: 0.3em;
@@ -132,8 +129,8 @@
 
 .cover__description {
   display: flex;
-  position: absolute;
-  inset: 656px 50px 50px;
+  position: relative;
+  margin: 104px 0px 0;
   z-index: 1;
   justify-content: space-between;
   align-items: center;
@@ -144,7 +141,6 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
-  letter-spacing: 0%;
   text-transform: uppercase;
   word-spacing: 0.9em;
 }
@@ -159,14 +155,13 @@
   opacity: 1;
   border: 1px solid #fff;
   font-weight: 500;
-  font-style: Medium;
   font-size: 22px;
   line-height: 100%;
-  letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
   background-color: transparent;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .lots {
@@ -177,10 +172,8 @@
 
 .lots__title {
   font-weight: 700;
-  font-style: Bold;
   font-size: 40px;
   line-height: 100%;
-  letter-spacing: 0%;
   text-transform: uppercase;
   padding-left: 40px;
   margin-bottom: 30px;
@@ -190,6 +183,7 @@
 .lots__cards-list {
   display: flex;
   gap: 25px;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0 0 33px;
@@ -209,10 +203,8 @@
 
 .card__title {
   font-weight: 700;
-  font-style: Bold;
   font-size: 22px;
   line-height: 120%;
-  letter-spacing: 0%;
   text-transform: uppercase;
   text-decoration: underline;
   text-underline-offset: 0.15em;
@@ -225,37 +217,29 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-  letter-spacing: 0%;
   color: #fff;
   margin: auto 40px 48px;
   text-decoration: none;
 }
 
-.lots__cards-list__item__cinema {
+.lots__cards-list__item {
   width: 334px;
   min-height: 596px;
-  background-image: url(../images/card-lot-01.jpg);
   background-position: center;
   background-size: cover;
   z-index: 0;
+}
+
+.lots__cards-list__item__cinema {
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .lots__cards-list__item__book {
-  width: 334px;
-  min-height: 596px;
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
-  z-index: 0;
 }
 
 .lots__cards-list__item__art {
-  width: 334px;
-  min-height: 596px;
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
-  z-index: 0;
 }
 
 .lots__link {
@@ -263,7 +247,6 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
-  letter-spacing: 0%;
   text-decoration: underline;
   text-underline-offset: 0.22em;
   text-decoration-thickness: 0.05em;
@@ -304,10 +287,8 @@
 
 .about__title {
   font-weight: 700;
-  font-style: Bold;
   font-size: 40px;
   line-height: 100%;
-  letter-spacing: 0%;
   text-transform: uppercase;
   margin-bottom: 100px;
 }
@@ -334,7 +315,7 @@
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  padding: 0 50px;
+  padding: 0 50px 60px;
 }
 
 .footer__address {
@@ -347,7 +328,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 120%;
-  letter-spacing: 0%;
 }
 
 .footer__menu-list-item {
@@ -359,6 +339,7 @@
 .footer__menu-list {
   list-style: none;
 }
+
 .footer__menu-link_active {
   text-decoration: none;
 }
